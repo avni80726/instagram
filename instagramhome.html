@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <title>instagram clone</title>
+    <style>
+        .a{
+            width: 15%;
+            height: 800px;
+            background-color: black;
+            float: left;
+            position: fixed;   
+            border: 1px solid grey;  
+            margin: 0;  
+        }
+        .logo{ 
+            width: 100%;
+            height: 70px;
+            /* background-color: black; */
+            background-image: url(instagramlogo1.png);
+            background-size: 8vw 8vh;
+            background-repeat: no-repeat;
+            float: left;
+            margin: 0px 0px 0px 0px;
+        }
+        .home1,.search1,.explore1,.reel1,.message1,.notification1,.create1,.profile1{
+            width: 13%;
+            height: 30px;
+            /* background-color: aqua; */
+            margin: 20px 0px 0px 10px;
+            float: left;  
+        } 
+        .home1 i,.search1 i,.explore1 i,.reel1 i,.message1 i,.notification1 i,.create1 i,.profile1 i{
+           /* background-color: white; */
+           text-align: center;
+           display: block;
+           font-size: 18px;
+           color: white;
+        }
+        .home2,.search2,.explore2,.reel2,.message2,.notification2,.create2,.profile2{
+            /* background-color: red; */
+            color: white;
+            width: 75%;
+            height: 30px;
+            float: left;
+            margin: 20px 0px 0px 10px;
+            font-size: 18px;
+            font-weight: 100;
+            text-align: left;
+        }
+        .half2{
+            background-color: red;
+            width: 55%;
+            height: 800px;
+            float: left;
+            margin-left: 220px;
+        }
+        .b{
+            width: 100%;
+            height: 1000px;
+            background-color: black;
+            float: left;
+        }
+        .status{
+            width:100%;
+            height: 90px;
+            background-color: black;
+            float: left;
+        }
+        .status .circle1{
+            width: 65px;
+            height: 65px;
+            /* background-color: green; */
+            border-radius: 50%;
+            margin: 10px 0px 0px 300px;
+            border: 1px solid #dfdfdf; 
+            float: left;
+            border:  solid rgb(214, 41, 118);
+        } 
+        .circle2, .circle3, .circle4, .circle5, .circle6{
+            width: 65px;
+            height: 65px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 10px 0px 0px 10px;
+            border: 1px solid #dfdfdf;
+             float: left; 
+             border: 3px solid rgb(214, 41, 118);
+        }
+        .status .profile1{
+            width: 65px;
+            height: 65px;
+            background-image: url("profile1.jpg");
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            text-align: center;
+            float: left;
+        }
+        .status .profile2{
+            width: 65px;
+            height: 65px;
+           background-image: url("profile2.jpeg");
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .status .profile3{
+            width: 65px;
+            height: 65px;
+           background-image: url("profile3.jpeg");
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .status .profile4{
+            width: 65px;
+            height: 65px;
+          background-image: url("profile4.jpeg");
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .status .profile5{
+            width: 65px;
+            height: 65px;
+          background-image: url("profile5.jpeg");
+            border-radius: 50%;
+            margin: 0px 0px 0px 00px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .status .profile6{
+            width: 65px;
+            height: 65px;
+           background-image: url("profile6.jpeg");
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .name{
+            width: 60%;
+            height: 20px;
+            /* background-color: red; */
+            float: left;
+            margin: 5px 0px 0px 290px;
+        }
+        .name pre{
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+            margin-top: -5px;
+        }
+        .post{
+            width: 60%;
+            height: 600px;
+            background-color: blueviolet;
+            margin: 120px 0px 0px 290px;
+             /* background-image: url("avni3.jpeg"); */
+            background-repeat: no-repeat;
+            background-size: 50vw 125vh; 
+            border: 1px solid grey;
+        }
+        .post img{
+            width: 100%;
+            height: 600px;
+        }
+        .posth{
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .posth .post-img{
+            width: 40px;
+            height: 40px;
+           background-image: url("avni2.jpeg");
+            border-radius: 50%;
+            margin: 5px 0px 0px 5px;
+            background-size: 3vw 8vh;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .comment{
+            width: 100%;
+            height: 50px;
+        }
+        .comment1{
+            width: 6%;
+            height: 25px;
+            float: left;
+        }
+        .comment1 i{
+            color: white;
+            font-size: 25px;
+        }
+        .comment2{
+            width: 4%;
+            height: 25px;
+            float: left;
+            margin-left: 5px;
+        }
+        .comment2 i{
+            color: white;
+            font-size: 25px;
+        }
+        .comment3{
+            width: 6%;
+            height: 25px;
+            float: left;
+            margin-left: 15px;
+        }
+        .comment3 i{
+            color: white;
+            font-size: 25px;
+        }
+        .comment4{
+            width: 5%;
+            height: 30px;
+            float: left;
+            margin-left: 470px;
+            margin-top: -25px;
+        }
+        .comment4 i{
+            color: white;
+            font-size: 25px;
+        }
+        .comment5{
+            width: 60%;
+            height: 25px;
+            margin: -70px 80px 0px 0px;
+            float: left;
+        }
+        .comment5 h6{
+            font-size: 15px;
+            font-weight: lighter;
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+            padding-left: 0px;
+        }
+        .emoji{
+            width: 5%;
+            height: 20px;
+            float: left;
+            margin: -70px 0px 0px 470px;
+        }
+        .emoji i{
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            margin-left: 12px;
+        }
+        .like1{
+            width: 20%;
+            height: 15px;
+            float: left;
+        }
+        .like1 h7{
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+            margin: 0;
+            padding-top: 1px;
+            padding-left: 0px;
+        }
+        .like{
+            width: 50%;
+            height: 70px;
+        }
+        .like h6{
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+            padding-left: 0px;
+        }
+        .like2{
+            width: 20%;
+            height: 15px;
+             margin-bottom: 80px;
+            float: left;
+        }
+        .like2 h6{
+            font-size: 15px;
+            font-weight: lighter;
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+            padding-left: 0px;
+        }
+        .like .like2{
+            width: 20%;
+            height: 15px;
+            margin-top: -10px;
+            font-weight: lighter;
+        }
+        .posth .post-content{
+            width: 25%;
+            height: 60px;
+            float: left;
+        }
+        .posth h3{
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding-top: 8px;
+            padding-left: 10px;
+        }
+        .posth h6{
+            font-size: 12px;
+            color: white;
+           margin: 0;
+           position: relative;
+           left: 10px;
+           bottom: 11px;
+        }
+        .dot{
+            width: 5%;
+            height: 15px;
+            background-color: black;
+            float: left;
+            margin: 10px 0px 0px 300px;
+        }
+        .dot i{
+            color: white;
+        }
+        .tick{
+            width: 3%;
+            height: 15px;
+            float: left;
+            margin:10px 10px 0px 0px;
+        }
+        .tick i{
+            color: rgb(0, 187, 255);
+            text-align: center;
+        }
+        .c{
+            width: 30%;
+            height: 1000px;
+            background-color: black;
+            float: left; 
+        }
+        .head{
+            width: 100%;
+            height: 80px;
+            background-color: brown;
+        }
+        .user{
+            width: 65px;
+            height: 65px;
+            background-image: url(avni.jpeg);
+            border-radius: 50%;
+            margin: 00px 0px 0px 0px;
+            background-size: 5vw 10vh;
+            background-repeat: no-repeat;
+            text-align: center;
+            float: left;
+        }
+        .me .pic{
+            background-image: url("avni2.jpeg");
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 3vw 7vh;
+            float: left;
+            margin: 20px 20px;
+        }
+        .me .name{
+            
+            font-size: large;
+            color: white;
+            margin: 20px 0px 0px 5px;
+            float: left;
+        }
+        .me .text{
+            height: 40px;
+            font-size: large;
+            color: blue;
+            margin: 20px 0px 0px 40px;
+            float: left;
+        }
+        .suggest{
+            width: 90%;
+            height: 30px;
+            float: left ;
+            margin: 0px 0px 0px 10px ;
+        }
+        .suggest .text1{ 
+            font-size: large;
+            color: white;
+            margin: 0px 0px 0px 10px;
+            float: left;
+        }
+        .suggest .text2{ 
+            font-size: large;
+            color: white;
+            margin: 0px 0px 0px 215px;
+            float: left;
+        }
+        .suggest1 .pic{
+            background-image: url("avni5.jpg");
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 3vw 5vh;
+            float: left;
+            margin: 20px 20px;
+        }
+        .suggest1 .name{
+            font-size: large;
+            color: white;
+            margin: 20px 0px 0px 5px;
+            float: left;
+        }
+        .suggest1 .text{
+            height: 40px;
+            font-size: large;
+            color: blue;
+            margin: 20px 0px 0px 17px;
+            float: left;
+        }
+        .suggest2{
+            width: 90%;
+            height: 30px;
+            float: left ;
+            margin: 0px 0px 0px 10px ;
+        }
+        .suggest2 .pic{
+            background-image: url("computer.jpeg");
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 3vw 7vh;
+            float: left;
+            margin: 20px 20px;
+        }
+        .suggest2 .name{
+            
+            font-size: large;
+            color: white;
+            margin: 20px 0px 0px 5px;
+            float: left;
+        }
+        .suggest2 .text{
+            height: 40px;
+            font-size: large;
+            color: blue;
+            margin: 20px 0px 0px 30px;
+            float: left;
+        }
+        .suggest3{
+            width: 90%;
+            height: 30px;
+            float: left ;
+            margin: 30px 0px 0px 10px ;
+        }
+        .suggest3 .pic{
+            background-image: url("avni.jpeg");
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 3vw 6vh;
+            float: left;
+            margin: 25px 20px;
+        }
+        .suggest3 .name{   
+            font-size: large;
+            color: white;
+            margin: 25px 0px 0px 5px;
+            float: left;
+        }
+        .suggest3 .text{
+
+            height: 40px;
+            font-size: large;
+            color: blue;
+            margin: 25px 0px 0px 30px;
+            float: left;
+        }
+        .about{
+            /* background-color: red; */
+            width: 80%;
+            height: 40px;
+            float: left;
+            margin: 70px 0px 0px 40px;
+            font-size: small;
+            color: white;
+        }
+        .about2{
+            /* background-color: red; */
+            width: 80%;
+            height: 40px;
+            float: left;
+            margin: 20px 0px 0px 50px;
+            font-size: small;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="logo"></div>
+        <div class="home1"><i class="fa-solid fa-house"></i></div>
+        <div class="home2">Home</div> 
+        <div class="search1"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="search2">Search</div>
+        <div class="explore1"><i class="fa-regular fa-compass"></i></div>
+        <div class="explore2">Explore</div>
+        <div class="reel1"><i class="fa-solid fa-clapperboard"></i></div>
+        <div class="reel2">Reels</div>
+        <div class="message1"><i class="fa-brands fa-telegram"></i></i></div>
+        <div class="message2">Messages</div>
+        <div class="notification1"><i class="fa-regular fa-heart"></i></div>
+        <div class="notification2">Notifications</div>
+        <div class="create1"><i class="fa-regular fa-square-plus"></i></div>
+        <div class="create2">Create</div>
+        <div class="profile1"><i class="fa-solid fa-circle-user"></i></div>
+        <div class="profile2">Profile</div>
+    </div>
+    <div class="half2">
+    <div class="b">
+        <div class="status">
+            <div class="circle1">
+                <div class="profile1"></div>
+            </div>
+            <div class="circle2">
+                <div class="profile2"></div>
+            </div>
+            <div class="circle3">
+                <div class="profile3"></div>
+            </div>
+            <div class="circle4">
+                <div class="profile4"></div>
+            </div>
+            <div class="circle5">
+                <div class="profile5"></div>
+            </div>
+            <div class="circle6">
+                <div class="profile6"></div>
+            </div>
+            <div class="name">
+                <pre>    user_1     user_2     user_3      user_4     user_5     user_6 </pre>
+            </div>
+            <div class="post">
+                <div class="posth">
+                    <div class="post-img"></div>
+                    <div class="post-content"><h3>_Avni__panwar</h3><br><h6>Original audio </h6></div>
+                    <div class="tick"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="dot"><i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="post2">
+                        <img src="./avni3.jpg" alt="">
+                        <div class="comment">
+                            <div class="comment1">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="comment2">
+                                <i class="fa-regular fa-comment fa-rotate-270"></i>
+                            </div>
+                            <div class="comment3">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <div class="comment4">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                            <div class="like1"><h7>176 Likes</h7></div>
+                        </div>
+                        <div class="like">
+                           <h6>"a little contour and confidence"</h6>
+                            <div class="like2"><h6>more</h6></div>
+                            <div class="comment5"><h6>Add a comment...</h6></div>
+                        </div> 
+                        <div class="emoji">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="c"> 
+        <div class="me">
+            <div class="pic"></div>
+            <div class="name"> _Avni___panwar <br> avni</div>
+            <div class="text">see all</div>
+        </div>
+        <div class="suggest">
+            <div class="text1"> Suggested for you </div>
+            <div class="text2"> See all</div>
+        </div>
+        <div class="suggest1">
+            <div class="pic"></div>
+            <div class="name"> _bunny_s <br> bunny</div>
+            <div class="text">follow</div>
+        </div>
+        <div class="suggest2">
+            <div class="pic"></div>
+            <div class="name"> nidhi_chaudhary <br>nidhi   </div>
+            <div class="text">follow</div>
+        </div>
+        <div class="suggest3">
+            <div class="pic"></div>
+            <div class="name"> will_bum <br>will    </div>
+            <div class="text">follow</div>
+        </div>
+        <div class="about"> about-help-pree-API-jobs-privacy-terms-location-lamguage-meta verified</div>
+        <div class="about2">@ 2023 INSTAGRAM FROM META</div>
+    </div>
+    </div>
+</body>
+</html>
